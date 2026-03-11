@@ -60,7 +60,7 @@ def binary_search_char(pos):
 extracted = ""
 for pos in range(1, 50):
     char = binary_search_char(pos)
-    if char == '':
+    if char == ' ':
         break
     extracted += char
 
