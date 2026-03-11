@@ -39,7 +39,7 @@ def binary_search_char(pos):
 
         try:
             res = requests.post(url, data=post_data, verify=False, timeout=5)
-            print(res)
+            #print(res.text) // 리스폰스 테스트용
         except requests.exceptions.RequestException as e:
             print(f"[!] Error at pos {pos}, mid {mid}: {e}")
             return ''
